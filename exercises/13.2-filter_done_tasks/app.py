@@ -10,6 +10,10 @@ tasks = [
 	{ "label": 'Make a trip', "done": False }
 ]
 
-
 #Your code go here:
+def my_func(item):
+    if item["done"]:
+        return item
 
+result = list(filter(my_func,tasks))
+print(result)
